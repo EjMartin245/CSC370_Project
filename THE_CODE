@@ -1,0 +1,164 @@
+#include "pch.h"
+#include <cstdlib>
+#include <iostream>
+using namespace std;
+
+/*
+selections: if...else, if... else if... else if...else, and switch;
+ loops : "for" loop, "do...while" loop, and "while" loop;
+ arrays : 1 - d array and 2 - d array;
+ define a class, define constructors, define methods;
+ call instance methods;
+ call static methods;
+*/
+void function() 
+{
+	int z, i;
+	double temp = 0;
+	double grades[5] = { 0, 0, 0, 0, 0 };
+
+	for (z = 0; z < 5; z++) {
+		cin >> grades[z];
+	}
+	for (i = 0; z < 5; z++) {
+		if (grades[i] > temp)
+		temp = grades[i];
+	}
+
+	cout << "" << endl;
+	cout << "If Else Statement:" << endl;
+	if (int(grades[i]) > 60)
+		cout << "Students passed";
+	else if (int(grades[i]) < 60)
+		cout << "Student Failed";
+	else
+		cout << "N/A";
+	cout << "" << endl;
+	cout << "" << endl;
+}
+
+/*void fis1(double n)
+{
+	cout << "Function 1" << endl;
+	cout << "" << endl;
+	cout << "1d-array" << endl;
+	cout << "enter 5 numbers: " << endl; 
+	
+
+	double grades[5];
+	grades[0] = 80.4;
+	grades[1] = 92.2;
+	grades[2] = 78.4;
+	grades[3] = 68.6;
+	grades[4] = 50.3; 
+
+	cout << "" << endl;
+	cout << "For loop" << endl;
+	for (int i = 0; i < n; i++)
+	{
+		grades[i] = i;
+		cout << "grades[" << i << "]=" << grades[i] << endl;
+	}
+	cout << "" << endl;
+
+	//if eles statement
+	cout << "If Else Statement" << endl;
+	if (int(grades[i]) > 60)
+		cout << "Student passed";
+	else if (int(grades[i]) < 60)
+		cout << "Student Failed";
+	else
+		cout << "N/A";
+
+}*/
+void fis2()
+{
+	cout << "Function 2:" << endl;
+	cout << "" << endl;
+	cout << "2d-array and 3d-array:" << endl;
+	cout << "" << endl;
+	int expenses[3][4] = {
+				   {1,2,3,4},
+				   {5,6,7,8},
+				   {9,10,11,12}
+	};
+	int expensess1[3][4][2] = {
+							  {{1,2},{3,4},{5,6},{7,8}},
+							  {{9,10},{11,12},{13,14},{15,16}},
+							  {{17,18},{19,20},{21,22},{23,24}}
+	};
+	cout << expenses << endl;
+	cout << "" << endl;
+	cout << expensess1 << endl;
+}
+void fis3() 
+{
+	cout << "Function 3:" << endl;
+	cout << "" << endl;
+	int a;
+	a = 10;
+
+	//while loop
+	cout << "While Loop:" << endl;
+	while (a > 0) {
+		cout << a << ", ";
+		--a;
+	}
+
+	cout << "" << endl;
+	cout << "" << endl;
+
+	// do .... while
+	cout << "Do...While:" << endl;
+	do {
+		cout << "value of a: " << a << endl;
+		a = a + 1;
+	} while (a < 20);
+
+
+	cout << "" << endl;
+	cout << "" << endl;
+
+	//if eles statement
+	cout << "If Else Statement:" << endl;
+	if (a > 0)
+		cout << "a is positive";
+	else if (a < 0)
+		cout << "a is negative";
+	else
+		cout << "a is 0";
+	
+
+	cout << "" << endl;
+	cout << "" << endl;
+
+	// switch
+	cout << "switch:" << endl;
+	switch (a) {
+	case 11: 
+		cout << "a is 11, in case 1";
+		break;
+	case 10: 
+		cout << "a is 10, in case 2";
+		break;
+	case -10: 
+		cout << "a is -10, in case 3";
+		break;
+	default:
+		cout << "a is not 1, 2 nor 3";
+	}
+	cout << "" << endl;
+	cout << "a is " << a << endl;
+}
+int main()
+{
+	cout << "enter 5 numbers: " << endl;
+	function();
+
+	/*fis1(5);
+	cout << "" << endl;*/
+	fis2();
+	cout << "" << endl;
+	fis3();
+	cout << "" << endl;
+}
