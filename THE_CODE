@@ -11,7 +11,7 @@ selections: if...else, if... else if... else if...else, and switch;
  call instance methods;
  call static methods;
 */
-void function() 
+/*void function() 
 {
 	int z, i;
 	double temp = 0;
@@ -35,22 +35,21 @@ void function()
 		cout << "N/A";
 	cout << "" << endl;
 	cout << "" << endl;
-}
-
-/*void fis1(double n)
+}*/
+void fis1(double n)
 {
 	cout << "Function 1" << endl;
 	cout << "" << endl;
 	cout << "1d-array" << endl;
-	cout << "enter 5 numbers: " << endl; 
-	
+	cout << "enter 5 numbers: " << endl;
+
 
 	double grades[5];
 	grades[0] = 80.4;
 	grades[1] = 92.2;
 	grades[2] = 78.4;
 	grades[3] = 68.6;
-	grades[4] = 50.3; 
+	grades[4] = 50.3;
 
 	cout << "" << endl;
 	cout << "For loop" << endl;
@@ -63,14 +62,15 @@ void function()
 
 	//if eles statement
 	cout << "If Else Statement" << endl;
-	if (int(grades[i]) > 60)
-		cout << "Student passed";
-	else if (int(grades[i]) < 60)
+	if (int(grades[1]) > 60)
 		cout << "Student Failed";
+	else if (int(grades[1]) < 60)
+		cout << "Student Passed";
 	else
 		cout << "N/A";
 
-}*/
+	cout << "" << endl;
+}
 void fis2()
 {
 	cout << "Function 2:" << endl;
@@ -91,7 +91,7 @@ void fis2()
 	cout << "" << endl;
 	cout << expensess1 << endl;
 }
-void fis3() 
+void fis3()
 {
 	cout << "Function 3:" << endl;
 	cout << "" << endl;
@@ -127,7 +127,7 @@ void fis3()
 		cout << "a is negative";
 	else
 		cout << "a is 0";
-	
+
 
 	cout << "" << endl;
 	cout << "" << endl;
@@ -135,13 +135,13 @@ void fis3()
 	// switch
 	cout << "switch:" << endl;
 	switch (a) {
-	case 11: 
+	case 11:
 		cout << "a is 11, in case 1";
 		break;
-	case 10: 
+	case 10:
 		cout << "a is 10, in case 2";
 		break;
-	case -10: 
+	case -10:
 		cout << "a is -10, in case 3";
 		break;
 	default:
@@ -152,11 +152,9 @@ void fis3()
 }
 int main()
 {
-	cout << "enter 5 numbers: " << endl;
-	function();
 
-	/*fis1(5);
-	cout << "" << endl;*/
+	fis1(5);
+	cout << "" << endl;
 	fis2();
 	cout << "" << endl;
 	fis3();
